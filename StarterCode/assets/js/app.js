@@ -58,3 +58,4 @@ function xTextRefresh() {
       ")"
   );
 }
+xTextRefresh();
