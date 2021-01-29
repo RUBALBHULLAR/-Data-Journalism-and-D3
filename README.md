@@ -27,7 +27,7 @@ Using the D3 techniques we taught you in class, create a scatter plot that repre
 
 - - -
 
-### Bonus: Impress the Boss (Optional Assignment)
+### Bonus: Impress the Boss 
 
 Why make a static graphic when D3 lets you interact with your data?
 
@@ -49,24 +49,4 @@ While the ticks on the axes allow us to infer approximate values for each circle
 
 - - -
 
-### Assessment
 
-Your final product will be assessed on the following metrics:
-
-* Creation of a **new** repository on GitHub called `D3-Challenge` (note the kebab-case). Do not add to an already existing repo.
-
-* Completion of all steps in the core assignment
-
-* Coherency of scatter plot (labels, ticks)
-
-* Visual attraction
-
-* Professionalism
-
-* Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
-
-**Good luck!**
-
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
