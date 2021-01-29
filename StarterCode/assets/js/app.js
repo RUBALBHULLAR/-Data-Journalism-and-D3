@@ -48,3 +48,13 @@ svg.append("g").attr("class", "xText");
 var xText = d3.select(".xText");
 
 // We give xText a transform property that places it at the bottom of the chart.
+function xTextRefresh() {
+  xText.attr(
+    "transform",
+    "translate(" +
+      ((width - labelArea) / 2 + labelArea) +
+      ", " +
+      (height - margin - tPadBot) +
+      ")"
+  );
+}
