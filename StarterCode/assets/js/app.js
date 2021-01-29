@@ -59,7 +59,83 @@ function xTextRefresh() {
   );
 }
 xTextRefresh();
+// Now we use xText to append three text SVG files, with y coordinates specified to space out the values.
+// 1. Poverty
+xText
+  .append("text")
+  .attr("y", -26)
+  .attr("data-name", "poverty")
+  .attr("data-axis", "x")
+  .attr("class", "aText active x")
+  .text("In Poverty (%)");
+// 2. Age
+xText
+  .append("text")
+  .attr("y", 0)
+  .attr("data-name", "age")
+  .attr("data-axis", "x")
+  .attr("class", "aText inactive x")
+  .text("Age (Median)");
+// 3. Income
+xText
+  .append("text")
+  .attr("y", 26)
+  .attr("data-name", "income")
+  .attr("data-axis", "x")
+  .attr("class", "aText inactive x")
+  .text("Household Income (Median)");
 
+// B) Left Axis
+// ============
+
+// Specifying the variables like this allows us to make our transform attributes more readable.
+var leftTextX = margin + tPadLeft;
+var leftTextY = (height + labelArea) / 2 - labelArea;
+
+// We add a second label group, this time for the axis left of the chart.
+svg.append("g").attr("class", "yText");
+
+// yText will allows us to select the group without excess code.
+var yText = d3.select(".yText");
+
+// Like before, we nest the group's transform attr in a function
+// to make changing it on window change an easy operation.
+function yTextRefresh() {
+  yText.attr(
+    "transform",
+    "translate(" + leftTextX + ", " + leftTextY + ")rotate(-90)"
+  );
+}
+yTextRefresh();
+
+// Now we append the text.
+// 1. Obesity
+yText
+  .append("text")
+  .attr("y", -26)
+  .attr("data-name", "obesity")
+  .attr("data-axis", "y")
+  .attr("class", "aText active y")
+  .text("Obese (%)");
+
+// 2. Smokes
+yText
+  .append("text")
+  .attr("x", 0)
+  .attr("data-name", "smokes")
+  .attr("data-axis", "y")
+  .attr("class", "aText inactive y")
+  .text("Smokes (%)");
+
+// 3. Lacks Healthcare
+yText
+  .append("text")
+  .attr("y", 26)
+  .attr("data-name", "healthcare")
+  .attr("data-axis", "y")
+  .attr("class", "aText inactive y")
+  .text("Lacks Healthcare (%)");
+  
 // 2. Import our .csv file.
 // ========================
 // This data file includes state-by-state demographic data from the US Census
