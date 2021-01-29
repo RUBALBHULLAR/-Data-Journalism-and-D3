@@ -46,3 +46,5 @@ crGet();
 svg.append("g").attr("class", "xText");
 // xText will allows us to select the group without excess code.
 var xText = d3.select(".xText");
+
+// We give xText a transform property that places it at the bottom of the chart.
