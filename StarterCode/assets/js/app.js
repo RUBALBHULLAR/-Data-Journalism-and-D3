@@ -59,3 +59,36 @@ function xTextRefresh() {
   );
 }
 xTextRefresh();
+
+// 2. Import our .csv file.
+// ========================
+// This data file includes state-by-state demographic data from the US Census
+// and measurements from health risks obtained
+// by the Behavioral Risk Factor Surveillance System.
+
+// Import our CSV data with d3's .csv import method.
+d3.csv("assets/data/data.csv").then(function(data) {
+  // Visualize the data
+  visualize(data);
+});
+
+// 3. Create our visualization function
+// ====================================
+// We called a "visualize" function on the data obtained with d3's .csv method.
+// This function handles the visual manipulation of all elements dependent on the data.
+function visualize(theData) {
+  // PART 1: Essential Local Variables and Functions
+  // =================================
+  // curX and curY will determine what data gets represented in each axis.
+  // We designate our defaults here, which carry the same names
+  // as the headings in their matching .csv data file.
+  var curX = "poverty";
+  var curY = "obesity";
+
+  // We also save empty variables for our the min and max values of x and y.
+  // this will allow us to alter the values in functions and remove repetitious code.
+  var xMin;
+  var xMax;
+  var yMin;
+  var yMax;
+}
