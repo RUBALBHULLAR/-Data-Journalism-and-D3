@@ -327,25 +327,26 @@ function visualize(theData) {
       var self = d3.select(this);
 
       if (self.classed("inactive")) {
-        // name and axis saved in label.
+        // defined name and axis saved in label.
         var axis = self.attr("data-axis");
         var name = self.attr("data-name");
 
         if (axis === "x") {
-          // Make curX the same as the data name.
+
           curX = name;
-  
-          // Change the min and max of the x-axis
+
+
           xMinMax();
-  
-          // Update the domain of x.
+
+
           xScale.domain([xMin, xMax]);
 
          // Now use a transition when we update the xAxis.
          svg.select(".xAxis").transition().duration(300).call(xAxis);
+
+         d3.selectAll("circle").each(function() {
+           
       }
 
-
-
     }
-  }
+  
