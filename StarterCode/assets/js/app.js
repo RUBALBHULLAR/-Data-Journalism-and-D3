@@ -277,5 +277,8 @@ function visualize(theData) {
     .attr("cy", function(d) {
       return yScale(d[curY]);
     })
-  
+    .attr("r", circRadius)
+    .attr("class", function(d) {
+      return "stateCircle " + d.abbr;
+    })
   }
