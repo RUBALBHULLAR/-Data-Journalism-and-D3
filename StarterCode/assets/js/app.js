@@ -323,5 +323,9 @@ function visualize(theData) {
       d3.select("." + d.abbr).style("stroke", "#e3e3e3");
     });
     // Part 4: Make the Graph Dynamic
-    
+    d3.selectAll(".aText").on("click", function() {
+
+
+      
+    }
     }
