@@ -1,11 +1,7 @@
 // 1: Pre-Data Setup
 // we need to at least set up the width, height and margins of the graph.
 var width = parseInt(d3.select("#scatter").style("width"));
-
-// Designate the height of the graph
 var height = width - width / 3.9;
-
-// Margin spacing for graph
 var margin = 20;
 
 // space for placing words
