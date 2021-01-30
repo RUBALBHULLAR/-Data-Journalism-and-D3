@@ -397,10 +397,17 @@ function visualize(theData) {
     .attr("r",function(){
       return circRadius;
     });
+  
+    d3
+     .selectAll(".stateText")
+     .attr("dy",function(d){
+       return yScale(d[curY])+ circRadius/3;
+     })
+
+     
 
 
 
-    
 
   }
 }
