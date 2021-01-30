@@ -161,4 +161,13 @@ function visualize(theData) {
   var xMax;
   var yMin;
   var yMax;
-}
+
+  // tooltip rules
+  var toolTip = d3
+    .tip()
+    .attr("class", "d3-tip")
+    .offset([40, -60])
+    .html(function(d) {
+      console.log(d)
+    
+      var theX;
