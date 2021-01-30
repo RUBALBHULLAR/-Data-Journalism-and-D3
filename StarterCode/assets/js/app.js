@@ -170,8 +170,16 @@ function visualize(theData) {
     .html(function(d) {
       console.log(d)
     
+      // x key
       var theX;
       var theState = "<div>" + d.state + "</div>";
       var theY = "<div>" + curY + ": " + d[curY] + "%</div>";
-      
+      // If the x key is poverty
+      if (curX === "poverty") {
+        // Grab the x key and a version of the value formatted to show percentage
+        theX = "<div>" + curX + ": " + d[curX] + "%</div>";
+      }
+      else{
+        
+      }
 
