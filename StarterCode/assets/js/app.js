@@ -259,13 +259,15 @@ function visualize(theData) {
     .call(xAxis)
     .attr("class", "xAxis")
     .attr("transform", "translate(0," + (height - margin - labelArea) + ")");
-  svg
+    svg
     .append("g")
     .call(yAxis)
     .attr("class", "yAxis")
     .attr("transform", "translate(" + (margin + labelArea) + ", 0)");
 
   
+    // grouping for our dots and their labels.
+    var theCircles = svg.selectAll("g theCircles").data(theData).enter();
   
   
   }
