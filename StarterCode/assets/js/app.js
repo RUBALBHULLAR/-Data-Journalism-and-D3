@@ -330,6 +330,16 @@ function visualize(theData) {
         // name and axis saved in label.
         var axis = self.attr("data-axis");
         var name = self.attr("data-name");
+
+        if (axis === "x") {
+          // Make curX the same as the data name.
+          curX = name;
+  
+          // Change the min and max of the x-axis
+          xMinMax();
+  
+          // Update the domain of x.
+          xScale.domain([xMin, xMax]);
       }
 
 
