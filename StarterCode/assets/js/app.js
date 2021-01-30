@@ -20,8 +20,7 @@ var svg = d3
   .attr("class", "chart");
 
 // Set the radius for each dot that will appear in the graph.
-// Note: Making this a function allows us to easily call
-// it in the mobility section of our code.
+
 var circRadius;
 function crGet() {
   if (width <= 530) {
