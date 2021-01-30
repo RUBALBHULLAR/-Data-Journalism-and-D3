@@ -229,4 +229,6 @@ function visualize(theData) {
       clickedText.classed("inactive", false).classed("active", true);
     }
   
+    xMinMax();
+    yMinMax();
   }
