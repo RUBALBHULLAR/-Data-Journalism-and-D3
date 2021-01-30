@@ -384,7 +384,17 @@ function visualize(theData) {
     xTextRefresh();
     yTextRefresh();
 
-    
+    crGet();
+
+    d3
+    .selectAll("circle")
+    .attr("cy",function(d){
+      return yScale(d[curY]);
+    })
+    .attr("cx",function(d){
+      return xScale(d[curX]);
+
+    })
 
   }
 }
