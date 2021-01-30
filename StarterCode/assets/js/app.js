@@ -316,4 +316,10 @@ function visualize(theData) {
       // Highlight the state circle's border
       d3.select("." + d.abbr).style("stroke", "#323232");
     })
+    .on("mouseout", function(d) {
+      // Remove tooltip
+      toolTip.hide(d);
+      // Remove highlight
+      d3.select("." + d.abbr).style("stroke", "#e3e3e3");
+    });
     }
