@@ -378,6 +378,7 @@ function visualize(theData) {
     .attr("transform","translate(0," + (height - margin - labelArea) + ")");
     svg.select(".yAxis").call(yAxis);
     
+    tickCount();
 
   }
 }
