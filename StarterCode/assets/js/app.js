@@ -281,4 +281,18 @@ function visualize(theData) {
     .attr("class", function(d) {
       return "stateCircle " + d.abbr;
     })
-  }
+
+    .on("mouseover", function(d) {
+      // Show the tooltip
+      toolTip.show(d, this);
+      // Highlight the state circle's border
+      d3.select(this).style("stroke", "#323232");
+      })
+
+  .on("mouseout", function(d) {
+    // Remove the tooltip
+    toolTip.hide(d);
+    // Remove highlight
+    d3.select(this).style("stroke", "#e3e3e3");
+  });
+
