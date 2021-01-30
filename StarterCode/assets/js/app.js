@@ -1,4 +1,5 @@
-// Grab the width of the containing box
+// 1: Pre-Data Setup
+// we need to at least set up the width, height and margins of the graph.
 var width = parseInt(d3.select("#scatter").style("width"));
 
 // Designate the height of the graph
