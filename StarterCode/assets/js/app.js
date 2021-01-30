@@ -403,7 +403,12 @@ function visualize(theData) {
      .attr("dy",function(d){
        return yScale(d[curY])+ circRadius/3;
      })
+     .attr("dx",function(d){
+       return xScale(d[curX]);
 
+     })
+     .attr("r", circRadius/3);
+  
      
 
 
