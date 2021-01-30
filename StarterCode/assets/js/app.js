@@ -324,8 +324,13 @@ function visualize(theData) {
     });
     // Part 4: Make the Graph Dynamic
     d3.selectAll(".aText").on("click", function() {
+      var self = d3.select(this);
+
+      if (self.classed("inactive")) {
+        
+      }
 
 
-      
+
     }
-    }
+  }
