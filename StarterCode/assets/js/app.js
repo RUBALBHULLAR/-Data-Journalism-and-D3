@@ -32,8 +32,7 @@ function crGet() {
 }
 crGet();
 
-// The Labels for our Axes
-
+// The Labels for axes
 // A) Bottom Axis
 // ==============
 
