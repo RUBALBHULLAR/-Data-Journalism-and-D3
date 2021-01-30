@@ -186,4 +186,8 @@ function visualize(theData) {
           parseFloat(d[curX]).toLocaleString("en") +
           "</div>";
       }
+      // Display what we capture.
+      return theState + theX + theY;
+    });
 
+  }
