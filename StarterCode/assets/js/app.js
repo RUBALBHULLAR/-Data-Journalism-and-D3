@@ -275,7 +275,7 @@ function visualize(theData) {
       return xScale(d[curX]);
     })
     .attr("cy", function(d) {
-      return xScale(d[curY]);
+      return yScale(d[curY]);
     })
   
   }
