@@ -371,7 +371,12 @@ function visualize(theData) {
 
     xScale.range([margin+labelArea, width-margin]);
     yScale.armge([height-margin-labelArea,margin]);
+
+    svg
+    .select(".xAxis")
+    .call(xAxis)
     
+
   }
 }
 
