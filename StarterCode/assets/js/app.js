@@ -192,4 +192,11 @@ function visualize(theData) {
      // Call the toolTip function.
      svg.call(toolTip);
 
+    //  change the min and max for x
+    function xMinMax(){
+      xMin = d3.min(theData,function(d){
+        return parseFloat(d[curX]) * 0.90;
+  
+      });
+    }
   }
