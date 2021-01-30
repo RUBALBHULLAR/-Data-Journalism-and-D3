@@ -368,7 +368,9 @@ function visualize(theData) {
     height = width -width/3.9;
     leftTextX = (height+labelArea)/2-labelArea;
     svg.attr("width",width).attr("height",height);
-    
+
+    xScale.range([margin+labelArea, width-margin]);
+    yScale.armge([height-margin-labelArea,margin]);
     
   }
 }
