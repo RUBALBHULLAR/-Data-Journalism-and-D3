@@ -171,3 +171,7 @@ function visualize(theData) {
       console.log(d)
     
       var theX;
+      var theState = "<div>" + d.state + "</div>";
+      var theY = "<div>" + curY + ": " + d[curY] + "%</div>";
+      
+
