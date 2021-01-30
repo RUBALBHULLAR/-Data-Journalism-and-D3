@@ -189,5 +189,7 @@ function visualize(theData) {
       // Display what we capture.
       return theState + theX + theY;
     });
+     // Call the toolTip function.
+     svg.call(toolTip);
 
   }
