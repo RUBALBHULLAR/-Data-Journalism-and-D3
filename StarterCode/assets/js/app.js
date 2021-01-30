@@ -375,6 +375,8 @@ function visualize(theData) {
     svg
     .select(".xAxis")
     .call(xAxis)
+    .attr("transform","translate(0," + (height - margin - labelArea) + ")");
+    svg.select(".yAxis").call(yAxis);
     
 
   }
