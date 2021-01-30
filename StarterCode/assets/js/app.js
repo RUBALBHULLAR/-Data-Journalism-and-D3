@@ -309,4 +309,11 @@ function visualize(theData) {
     .attr("dy", function(d) {
       return yScale(d[curY]) + circRadius / 2.5;
     })
+    // Hover Rules
+    .on("mouseover", function(d) {
+      // Show the tooltip
+      toolTip.show(d);
+      // Highlight the state circle's border
+      d3.select("." + d.abbr).style("stroke", "#323232");
+    })
     }
