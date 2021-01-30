@@ -327,8 +327,9 @@ function visualize(theData) {
       var self = d3.select(this);
 
       if (self.classed("inactive")) {
-      var axis = self.attr("data-axis");
-      var name = self.attr("data-name");
+        // name and axis saved in label.
+        var axis = self.attr("data-axis");
+        var name = self.attr("data-name");
       }
 
 
