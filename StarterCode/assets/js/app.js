@@ -359,6 +359,9 @@ function visualize(theData) {
     }
 
   });
+  // Part 5: Mobile Responsive
+  // =========================
+  // With d3, we can call a resize function whenever the window dimensions change.
 
 }
 
