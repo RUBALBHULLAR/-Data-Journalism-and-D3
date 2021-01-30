@@ -198,5 +198,9 @@ function visualize(theData) {
         return parseFloat(d[curX]) * 0.90;
   
       });
+      xMax = d3.max(theData,function(d){
+        return parseFloat(d[curX]) * 1.10;
+        
+      });
     }
   }
