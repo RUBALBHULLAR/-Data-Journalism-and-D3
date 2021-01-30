@@ -345,7 +345,14 @@ function visualize(theData) {
          svg.select(".xAxis").transition().duration(300).call(xAxis);
 
          d3.selectAll("circle").each(function() {
-           
+          d3
+          .select(this)
+          .transition()
+          .attr("dy", function(d) {
+            return yScale(d[curY]) + circRadius / 3;
+          })
+          
+
       }
 
     }
