@@ -380,6 +380,12 @@ function visualize(theData) {
     
     tickCount();
 
+    // Update the ticks on each axis
+    xTextRefresh();
+    yTextRefresh();
+
+    
+
   }
 }
 
