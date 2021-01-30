@@ -82,7 +82,7 @@ xText
   .text("Household Income (Median)");
 
 // B) Left Axis
-// ============
+
 
 // Specifying the variables like this allows us to make our transform attributes more readable.
 var leftTextX = margin + tPadLeft;
@@ -94,8 +94,7 @@ svg.append("g").attr("class", "yText");
 // yText will allows us to select the group without excess code.
 var yText = d3.select(".yText");
 
-// Like before, we nest the group's transform attr in a function
-// to make changing it on window change an easy operation.
+
 function yTextRefresh() {
   yText.attr(
     "transform",
