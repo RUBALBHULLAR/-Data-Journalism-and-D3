@@ -393,8 +393,14 @@ function visualize(theData) {
     })
     .attr("cx",function(d){
       return xScale(d[curX]);
-
     })
+    .attr("r",function(){
+      return circRadius;
+    });
+
+
+
+    
 
   }
 }
