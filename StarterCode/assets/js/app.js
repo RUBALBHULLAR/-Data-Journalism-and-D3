@@ -322,4 +322,6 @@ function visualize(theData) {
       // Remove highlight
       d3.select("." + d.abbr).style("stroke", "#e3e3e3");
     });
+    // Part 4: Make the Graph Dynamic
+    
     }
