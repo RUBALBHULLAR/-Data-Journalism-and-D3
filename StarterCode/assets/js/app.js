@@ -143,12 +143,8 @@ d3.csv("assets/data/data.csv").then(function(data) {
 });
 
 // 3. Create our visualization function
-// ====================================
-// We called a "visualize" function on the data obtained with d3's .csv method.
-// This function handles the visual manipulation of all elements dependent on the data.
 function visualize(theData) {
   // PART 1: Essential Local Variables and Functions
-  // =================================
   // curX and curY will determine what data gets represented in each axis.
   
   var curX = "poverty";
@@ -244,6 +240,8 @@ function visualize(theData) {
     var xAxis = d3.axisBottom(xScale);
     var yAxis = d3.axisLeft(yScale);
   
+
+    // Determine x and y tick counts.
     function tickCount() {
       if (width <= 500) {
         xAxis.ticks(5);
