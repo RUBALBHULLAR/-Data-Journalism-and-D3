@@ -180,6 +180,10 @@ function visualize(theData) {
         theX = "<div>" + curX + ": " + d[curX] + "%</div>";
       }
       else{
-        
+        theX = "<div>" +
+          curX +
+          ": " +
+          parseFloat(d[curX]).toLocaleString("en") +
+          "</div>";
       }
 
