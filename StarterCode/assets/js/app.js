@@ -364,6 +364,9 @@ function visualize(theData) {
   // With d3, we can call a resize function whenever the window dimensions change.
   d3.select(window).on("resize".resize);
   function resize(){
+    width = parseInt(d3.select("#scatter").style("width"));
+    height = width -width/3.9;
+    
     
   }
 }
