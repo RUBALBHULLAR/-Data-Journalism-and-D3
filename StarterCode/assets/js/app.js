@@ -217,7 +217,7 @@ function visualize(theData) {
       });
     }
     function labelChange(axis, clickedText) {
-      // Switch the currently active to inactive.
+  
       d3
         .selectAll(".aText")
         .filter("." + axis)
@@ -245,6 +245,17 @@ function visualize(theData) {
     var xAxis = d3.axisBottom(xScale);
     var yAxis = d3.axisLeft(yScale);
   
+    function tickCount() {
+      if (width <= 500) {
+        xAxis.ticks(5);
+        yAxis.ticks(5);
+      }
+      else {
+        xAxis.ticks(10);
+        yAxis.ticks(10);
+      }
+    }
+    tickCount();
   
   
   
