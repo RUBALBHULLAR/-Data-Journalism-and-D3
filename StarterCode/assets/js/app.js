@@ -42,8 +42,7 @@ svg.append("g").attr("class", "xText");
 var xText = d3.select(".xText");
 
 // We give xText a transform property that places it at the bottom of the chart.
-// By nesting this attribute in a function, we can easily change the location of the label group
-// whenever the width of the window changes.
+
 function xTextRefresh() {
   xText.attr(
     "transform",
@@ -133,13 +132,7 @@ yText
   .attr("class", "aText inactive y")
   .text("Lacks Healthcare (%)");
 
-// 2. Import our .csv file.
-// ========================
-// This data file includes state-by-state demographic data from the US Census
-// and measurements from health risks obtained
-// by the Behavioral Risk Factor Surveillance System.
-
-// Import our CSV data with d3's .csv import method.
+// 2. Import our CSV data with d3's .csv import method.
 d3.csv("assets/data/data.csv").then(function(data) {
   // Visualize the data
   visualize(data);
