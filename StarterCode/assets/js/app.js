@@ -351,9 +351,15 @@ function visualize(theData) {
           .attr("dy", function(d) {
             return yScale(d[curY]) + circRadius / 3;
           })
-          
+          .duration(300);
+        });
 
+      labelChange(axis,self);
       }
-
     }
-  
+
+  });
+
+}
+
+    
