@@ -271,5 +271,11 @@ function visualize(theData) {
   
     theCircles
     .append("circle")
+    .attr("cx", function(d) {
+      return xScale(d[curX]);
+    })
+    .attr("cy", function(d) {
+      return xScale(d[curY]);
+    })
   
   }
