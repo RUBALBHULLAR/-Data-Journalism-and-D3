@@ -269,5 +269,7 @@ function visualize(theData) {
     // grouping for our dots and their labels.
     var theCircles = svg.selectAll("g theCircles").data(theData).enter();
   
+    theCircles
+    .append("circle")
   
   }
