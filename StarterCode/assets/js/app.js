@@ -241,4 +241,12 @@ function visualize(theData) {
     .scaleLinear()
     .domain([yMin, yMax])
     .range([height - margin - labelArea, margin]);
+  
+    var xAxis = d3.axisBottom(xScale);
+    var yAxis = d3.axisLeft(yScale);
+  
+  
+  
+  
+  
   }
