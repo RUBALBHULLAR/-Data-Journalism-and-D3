@@ -216,4 +216,17 @@ function visualize(theData) {
         
       });
     }
+    function labelChange(axis, clickedText) {
+      // Switch the currently active to inactive.
+      d3
+        .selectAll(".aText")
+        .filter("." + axis)
+        .filter(".active")
+        .classed("active", false)
+        .classed("inactive", true);
+  
+      // Switch the text just clicked to active.
+      clickedText.classed("inactive", false).classed("active", true);
+    }
+  
   }
