@@ -289,10 +289,11 @@ function visualize(theData) {
       d3.select(this).style("stroke", "#323232");
       })
 
-  .on("mouseout", function(d) {
+     .on("mouseout", function(d) {
     // Remove the tooltip
     toolTip.hide(d);
     // Remove highlight
     d3.select(this).style("stroke", "#e3e3e3");
-  });
+      });
 
+    }
