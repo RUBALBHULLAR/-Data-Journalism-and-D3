@@ -150,8 +150,7 @@ function visualize(theData) {
   // PART 1: Essential Local Variables and Functions
   // =================================
   // curX and curY will determine what data gets represented in each axis.
-  // We designate our defaults here, which carry the same names
-  // as the headings in their matching .csv data file.
+  
   var curX = "poverty";
   var curY = "obesity";
 
