@@ -206,5 +206,14 @@ function visualize(theData) {
     }
 
     // change the min and max for y
-
+    function yMinMax(){
+      yMin = d3.min(theData,function(d){
+        return parseFloat(d[curY]) * 0.90;
+  
+      });
+      yMax = d3.max(theData,function(d){
+        return parseFloat(d[curY]) * 1.10;
+        
+      });
+    }
   }
