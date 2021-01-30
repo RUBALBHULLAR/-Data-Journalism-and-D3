@@ -366,6 +366,8 @@ function visualize(theData) {
   function resize(){
     width = parseInt(d3.select("#scatter").style("width"));
     height = width -width/3.9;
+    leftTextX = (height+labelArea)/2-labelArea;
+    svg.attr("width",width).attr("height",height);
     
     
   }
