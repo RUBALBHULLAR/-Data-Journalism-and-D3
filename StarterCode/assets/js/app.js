@@ -296,4 +296,17 @@ function visualize(theData) {
     d3.select(this).style("stroke", "#e3e3e3");
       });
 
+      theCircles
+      .append("text")
+      // We return the abbreviation to .text, which makes the text the abbreviation.
+      .text(function(d) {
+        return d.abbr;
+      })
+    // Now place the text using our scale.
+    .attr("dx", function(d) {
+      return xScale(d[curX]);
+    })
+    .attr("dy", function(d) {
+      return yScale(d[curY]) + circRadius / 2.5;
+    })
     }
