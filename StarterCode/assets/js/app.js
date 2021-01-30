@@ -340,6 +340,9 @@ function visualize(theData) {
   
           // Update the domain of x.
           xScale.domain([xMin, xMax]);
+
+         // Now use a transition when we update the xAxis.
+         svg.select(".xAxis").transition().duration(300).call(xAxis);
       }
 
 
