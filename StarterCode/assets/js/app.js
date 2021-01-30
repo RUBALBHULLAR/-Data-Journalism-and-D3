@@ -34,7 +34,7 @@ crGet();
 
 // The Labels for axes
 // A) Bottom Axis
-// ==============
+
 
 // We create a group element to nest our bottom axes labels.
 svg.append("g").attr("class", "xText");
@@ -146,15 +146,12 @@ d3.csv("assets/data/data.csv").then(function(data) {
 });
 
 // 3. Create our visualization function
-// ====================================
-// We called a "visualize" function on the data obtained with d3's .csv method.
-// This function handles the visual manipulation of all elements dependent on the data.
+
 function visualize(theData) {
   // PART 1: Essential Local Variables and Functions
-  // =================================
+
   // curX and curY will determine what data gets represented in each axis.
-  // We designate our defaults here, which carry the same names
-  // as the headings in their matching .csv data file.
+  
   var curX = "poverty";
   var curY = "obesity";
 
