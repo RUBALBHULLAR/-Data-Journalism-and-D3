@@ -136,13 +136,7 @@ yText
   .attr("class", "aText inactive y")
   .text("Lacks Healthcare (%)");
   
-// 2. Import our .csv file.
-// ========================
-// This data file includes state-by-state demographic data from the US Census
-// and measurements from health risks obtained
-// by the Behavioral Risk Factor Surveillance System.
-
-// Import our CSV data with d3's .csv import method.
+// 2. Import our .csv file
 d3.csv("assets/data/data.csv").then(function(data) {
   // Visualize the data
   visualize(data);
